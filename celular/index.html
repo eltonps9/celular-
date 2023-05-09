@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset=" UTF-8 ">
+    <meta http-equiv="X-UA-Compatible " content="IE=edge ">
+    <meta name="viewport " content="width=device-width, initial-scale=1.0 ">
+    <title>Celular</title>
+    <link rel="stylesheet" href="assets/css/newstyle.css">
+</head>
+
+<body onload="carregar()">
+
+    <!-- celular -->
+    <div class="area--cel">
+        <div class="area--cam"></div>
+
+        <!-- area da tela -->
+        <div class="area--cel--screen" id="rodar">
+            <header class="area--cel--notif">
+                <p class="area--cel--horas" id="tela"> </p>
+                <div class="area--cel--notif--not">notificações</div>
+            </header>
+            <div class="area--screen">
+                <h2 id="turno"></h2>
+                <p id="p"></p>
+
+                <div class="app">
+                    <button class="calculadora">calculadora</button>
+                    <button class="ggl">google</button>
+
+                </div>
+                <div class="google">
+                    <form method="get">
+                        <input type="search" placeholder="pesquisar">
+                        <input type="submit" value="pesquisar">
+                    </form>
+                    <div class="areaPesq">
+
+                    </div>
+                </div>
+                <div class="calc">
+                    <div class="res">
+                        <p class="respo"></p>
+                    </div>
+                    <!--calculadora-->
+                    <div class="tec">
+                        <div class="esq">
+                            <div class="teclas">
+                                <button class="td" onclick="clicou('1')">1</button>
+                                <button class="td" onclick="clicou('2')">2</button>
+                                <button class="td" onclick="clicou('3')">3</button>
+                                <button class="td" onclick="clicou('*')">*</button>
+
+
+                            </div>
+                            <div class="teclas">
+                                <button class="td" onclick="clicou('4')">4</button>
+                                <button class="td" onclick="clicou('5')">5</button>
+                                <button class="td" onclick="clicou('6')">6</button>
+                                <button class="td" onclick="clicou('+')">+</button>
+
+                            </div>
+                            <div class="teclas">
+                                <button class="td" onclick="clicou('7')">7</button>
+                                <button class="td" onclick="clicou('8')">8</button>
+                                <button class="td" onclick="clicou('9')">9</button>
+                                <button class="td" onclick="clicou('-')">-</button>
+
+                            </div>
+                            <div class="teclas">
+                                <button class="td" onclick="clicou('0')">0</button>
+                                <button style="background-color: white;" class="td" onclick="limpar()"></button>
+                                <button class="td" onclick="clicou('.')">.</button>
+                                <button style="background-color: green;" class="td" onclick="igual('=')">=</button>
+                                <button class="td" onclick="clicou('/')">/</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+
+
+    <!--power-->
+    <div class="area--power">
+        <button class="power"></button>
+    </div>
+    <script src="assets/js/notificacoes.js"></script>
+    <script src="assets/js/calculadora.js"></script>
+</body>
+
+</html>
